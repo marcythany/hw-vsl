@@ -90,23 +90,20 @@
 				<div class="visually-hidden">
 					<h1 id="video-heading">Natty Lean Product Video</h1>
 				</div>
+
 				<div class="row justify-content-center">
 					<div class="col-lg-10">
-						<div class="ratio ratio-16x9 video-container position-relative">
-							<video
-								id="main-video"
-								class="w-100"
-								controls
-								preload="metadata"
-								poster="assets/img/Bottle-Mockup.png"
-								aria-describedby="video-description"
-							>
-								<source src="assets/video/sales-video.mp4" type="video/mp4" />
-							</video>
-							<div id="video-description" class="visually-hidden">
-								Learn about Natty Lean's revolutionary weight loss formula and
-								scientific backing.
-							</div>
+						<div
+							id="video-block"
+							class="ratio ratio-16x9 video-container position-relative"
+							data-src="https://www.youtube.com/watch?v=LNYm40RmRzs"
+							data-poster="assets/img/Bottle-Mockup.png"
+							aria-describedby="video-description"
+						></div>
+
+						<div id="video-description" class="visually-hidden">
+							Learn about Natty Lean's revolutionary weight loss formula and
+							scientific backing.
 						</div>
 					</div>
 				</div>
@@ -392,6 +389,7 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
 		<script type="module" src="assets/js/main.js"></script>
 	</body>
 </html>
