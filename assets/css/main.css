@@ -1,0 +1,113 @@
+/* General Layout & Spacing */
+body {
+	font-family: 'Segoe UI', system-ui, sans-serif;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+}
+
+section {
+	margin-bottom: 2.5rem;
+}
+
+.card {
+	border-radius: var(--bs-border-radius);
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
+.card:hover {
+	transform: translateY(-6px);
+}
+
+/* Glassmorphism Header */
+header.navbar {
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: var(--bs-box-shadow);
+}
+
+.offer-card {
+	position: relative;
+	border: 2px solid transparent;
+	overflow: visible;
+}
+
+/* Countdown Timer */
+.countdown-display {
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+
+/* FAQ Accordion */
+.accordion-button {
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+/* Focus Styles for Accessibility */
+:focus {
+	outline: 3px solid var(--bs-success) !important;
+	outline-offset: 2px !important;
+}
+
+/* Button Enhancements */
+.btn {
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.btn:focus {
+	box-shadow: 0 0 0 2px var(--bs-success);
+}
+
+/* Video Container Styling */
+.video-container {
+	border-radius: var(--bs-border-radius);
+	overflow: hidden;
+	box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Guarantee Section */
+#guarantee-section {
+	border-radius: var(--bs-border-radius);
+	padding: 2rem 0;
+}
+
+/* Highlight Offer Badge */
+.highlight-offer::before {
+	position: absolute;
+	top: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 20px;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.offers-grid {
+		grid-template-columns: 1fr;
+	}
+	.highlight-offer::before {
+		transform: translateX(-50%) scale(0.95);
+		top: -12px;
+	}
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition: none !important;
+		transform: none !important;
+	}
+}
