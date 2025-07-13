@@ -1,6 +1,0 @@
-exclude:
-  - main.html
-  - thankyou.html
-  - video/
-  - assets/
-  - embed.py
